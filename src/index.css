@@ -1,21 +1,21 @@
 :root {
-  /* Soft Green Theme Palette */
-  --primary-color: #059669; /* Emerald 600 */
-  --primary-hover: #047857; /* Emerald 700 */
-  --secondary-color: #10b981; /* Emerald 500 */
-  --accent-color: #34d399; /* Emerald 400 */
-  --bg-color: #f0fdf4; /* Light Emerald Tint */
-  --card-bg: #ffffff;
-  --text-main: #1f2937; /* Gray 800 */
-  --text-secondary: #6b7280; /* Gray 500 */
-  --input-bg: #f9fafb; /* Gray 50 */
-  --input-border: #d1fae5; /* Emerald 100 */
-  --error-color: #ef4444;
+  /* Beige and Brown Minimalist Theme Palette */
+  --primary-color: #5D4037; /* Dark Brown for buttons and strong emphasis */
+  --primary-hover: #4E342E; /* Darker brown on hover */
+  --secondary-color: #EFEBE9; /* Soft beige for secondary areas/hover states */
+  --accent-color: #8D6E63; /* Medium brown for accents */
+  --bg-color: #FDF4E3; /* Warm Beige Background */
+  --card-bg: #FFFFFF; /* Pure white for cards to pop slightly */
+  --text-main: #3E2723; /* Very Dark Brown Text */
+  --text-secondary: #5D4037; /* Dark Brown Text */
+  --input-bg: #FFFFFF; /* White Inputs */
+  --input-border: #D7CCC8; /* Light brown border */
+  --error-color: #D32F2F; /* Standard Red for errors */
   
   --radius: 12px;
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
 
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -33,18 +33,18 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  display: block;
   min-width: 320px;
   min-height: 100vh;
-  justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--text-main);
 }
 
 #root {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Premium UI Utilities */
@@ -63,24 +63,25 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--primary-hover);
+  filter: brightness(1.1);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
 
 .btn:focus,
 .btn:focus-visible {
-  outline: 4px auto var(--accent-color);
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
 }
 
 .btn-secondary {
-  background-color: white;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--text-secondary);
 }
 
 .btn-secondary:hover {
-  background-color: var(--input-bg);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .input-group {
@@ -94,14 +95,15 @@ body {
 .input-label {
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--text-secondary);
 }
 
 .input-field {
   padding: 0.75rem 1rem;
-  border-radius: var(--radius);
+  border-radius: 8px;
   border: 1px solid var(--input-border);
   background-color: var(--input-bg);
+  color: var(--text-main);
   font-size: 1rem;
   transition: all 0.2s;
   outline: none;
@@ -110,8 +112,8 @@ body {
 }
 
 .input-field:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px var(--input-border);
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.3);
 }
 
 .card {
@@ -119,13 +121,14 @@ body {
   padding: 2.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(148, 163, 184, 0.1);
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
 }
 
 .link {
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
@@ -135,6 +138,6 @@ body {
   text-decoration: underline;
 }
 
-h1, h2, h3 {
-  color: #111827; 
+h1, h2, h3, h4 {
+  color: var(--text-main); 
 }

@@ -4,22 +4,30 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/dev-all.mjs",
+    "dev:frontend": "vite",
+    "dev:backend": "npm run dev --prefix backend",
     "build": "vite build",
+    "render-build": "npm install && npm run build && npm install --prefix backend",
+    "start": "node backend/server.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "chart.js": "^4.5.1",
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
+    "react-chartjs-2": "^5.3.1",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.13.0"
+    "react-router-dom": "^7.13.0",
+    "recharts": "^3.8.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^9.2.1",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",

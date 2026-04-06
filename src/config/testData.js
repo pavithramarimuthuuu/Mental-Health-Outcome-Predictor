@@ -1,0 +1,180 @@
+export const testConfig = {
+    depression: {
+        title: "Take a Mental Health Test",
+        subtitle: "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+        type: "PHQ-9",
+        questions: [
+            { id: "q1", text: "1. Little interest or pleasure in doing things", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q2", text: "2. Feeling down, depressed, or hopeless", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q3", text: "3. Trouble falling or staying asleep, or sleeping too much", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q4", text: "4. Feeling tired or having little energy", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q5", text: "5. Poor appetite or overeating", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q6", text: "6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q7", text: "7. Trouble concentrating on things, such as reading the newspaper or watching television", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q8", text: "8. Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q9", text: "9. Thoughts that you would be better off dead, or of hurting yourself", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q10", text: "10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?", options: ["NOT DIFFICULT AT ALL", "SOMEWHAT DIFFICULT", "VERY DIFFICULT", "EXTREMELY DIFFICULT"] }
+        ]
+    },
+    anxiety: {
+        title: "Take a Mental Health Test",
+        subtitle: "Over the last 2 weeks, how often have you been bothered by the following problems?",
+        type: "GAD-7",
+        questions: [
+            { id: "q1", text: "1. Feeling nervous, anxious, or on edge", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q2", text: "2. Not being able to stop or control worrying", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q3", text: "3. Worrying too much about different things", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q4", text: "4. Trouble relaxing", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q5", text: "5. Being so restless that it is hard to sit still", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q6", text: "6. Becoming easily annoyed or irritable", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] },
+            { id: "q7", text: "7. Feeling afraid, as if something awful might happen", options: ["NOT AT ALL", "SEVERAL DAYS", "MORE THAN HALF THE DAYS", "NEARLY EVERY DAY"] }
+        ]
+    },
+    ocd: {
+        title: "Take a Mental Health Test",
+        subtitle: "During the past month...",
+        type: "OCD",
+        questions: [
+            { id: "q1", text: "1. I have saved up so many things that they get in the way.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q2", text: "2. I check things more often than necessary.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q3", text: "3. I get upset if objects are not arranged properly.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q4", text: "4. I feel compelled to count while I am doing things.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q5", text: "5. I find it difficult to touch an object when I know it has been touched by strangers or certain people.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q6", text: "6. I find it difficult to control my own thoughts.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q7", text: "7. I collect things I don't need.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q8", text: "8. I repeatedly check doors, windows, drawers, etc.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q9", text: "9. I get upset if others change the way I have arranged things.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q10", text: "10. I feel I have to repeat certain numbers.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q11", text: "11. I sometimes have to wash or clean myself simply because I feel contaminated.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q12", text: "12. I am upset by unpleasant thoughts that come into my mind against my will.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q13", text: "13. I avoid throwing things away because I am afraid I might need them later.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q14", text: "14. I repeatedly check gas and water taps and light switches after turning them off.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q15", text: "15. I need things to be arranged in a particular way.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q16", text: "16. I feel that there are good and bad numbers.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q17", text: "17. I wash my hands more often and longer than necessary.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "q18", text: "18. I frequently get nasty thoughts and have difficulty in getting rid of them.", options: ["NOT AT ALL", "A LITTLE", "MODERATELY", "A LOT", "EXTREMELY"] },
+            { id: "qOptional", text: "Optional: What is most distressing to you about the OCD symptoms you've been experiencing?", type: "text" }
+        ]
+    },
+    bipolar: {
+        title: "Take a Mental Health Test",
+        subtitle: "Please answer each question to the best of your ability.\n\nPlease note, all fields are required.\n\n1. Has there ever been a period of time when you were not your usual self and...",
+        type: "Bipolar",
+        questions: [
+            { id: "q1", text: "You felt so good or hyper that other people thought you were not your normal self or were so hyper that you got into trouble?", options: ["YES", "NO"] },
+            { id: "q2", text: "You were so irritable that you shouted at people or started fights or arguments?", options: ["YES", "NO"] },
+            { id: "q3", text: "You felt much more self-confident than usual?", options: ["YES", "NO"] },
+            { id: "q4", text: "You got much less sleep than usual and found you didn't really miss it?", options: ["YES", "NO"] },
+            { id: "q5", text: "You were much more talkative or spoke much faster than usual?", options: ["YES", "NO"] },
+            { id: "q6", text: "Thoughts raced through your head or you couldn't slow your mind down?", options: ["YES", "NO"] },
+            { id: "q7", text: "You were so easily distracted by things around you that you had trouble concentrating or staying on track?", options: ["YES", "NO"] },
+            { id: "q8", text: "You had much more energy than usual?", options: ["YES", "NO"] },
+            { id: "q9", text: "You were much more social or outgoing than usual, for example, you telephoned friends in the middle of the night?", options: ["YES", "NO"] },
+            { id: "q10", text: "You were much more interested in sex than usual?", options: ["YES", "NO"] },
+            { id: "q11", text: "You did things that were unusual for you or that other people might have thought were excessive, foolish, or risky?", options: ["YES", "NO"] },
+            { id: "q12", text: "Spending money got you or your family into trouble?", options: ["YES", "NO"] }
+        ]
+    },
+    "social-anxiety": {
+        title: "Take a Mental Health Test",
+        subtitle: "During the past 7 days, I have...",
+        type: "Social Anxiety",
+        questions: [
+            { id: "q1", text: "1. Felt moments of sudden terror, fear, or fright in social situations", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q2", text: "2. Felt anxious, worried, or nervous about social situations", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q3", text: "3. Have had thoughts of being rejected, humiliated, embarrassed, ridiculed, or offending others", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q4", text: "4. Felt a racing heart, sweaty, trouble breathing, faint, or shaky in social situations", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q5", text: "5. Felt tense muscles, felt on edge or restless, or had trouble relaxing in social situations", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q6", text: "6. Avoided, or did not approach or enter, social situations", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q7", text: "7. Left social situations early or participated only minimally (e.g., said little, avoided eye contact)", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q8", text: "8. Spent a lot of time preparing what to say or how to act in social situations", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q9", text: "9. Distracted myself to avoid thinking about social situations", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "q10", text: "10. Needed help to cope with social situations (e.g., alcohol or medications, superstitious objects)", options: ["NEVER", "OCCASIONALLY", "HALF OF THE TIME", "MOST OF THE TIME", "ALL OF THE TIME"] },
+            { id: "qOptional", text: "Optional: What is most distressing to you about the social anxiety symptoms you've been experiencing?", type: "text" }
+        ]
+    },
+    postpartum: {
+        title: "Take a Mental Health Test",
+        subtitle: "Please note, all fields are required.",
+        type: "Postpartum Depression",
+        questions: [
+            { id: "q1", text: "1. I have been able to laugh and see the funny side of things", options: ["AS MUCH AS I ALWAYS COULD", "NOT QUITE AS MUCH NOW", "DEFINITELY NOT AS MUCH NOW", "NOT AT ALL"] },
+            { id: "q2", text: "2. I have looked forward with enjoyment to things", options: ["AS MUCH AS I EVER DID", "SOMEWHAT LESS THAN I USED TO", "DEFINITELY LESS THAN I USED TO", "HARDLY AT ALL"] },
+            { id: "q3", text: "3. I have blamed myself when things went wrong", options: ["YES, MOST OF THE TIME", "YES, SOME OF THE TIME", "NOT VERY OFTEN", "NO, NEVER"] },
+            { id: "q4", text: "4. I have felt anxious or worried", options: ["NO, NOT AT ALL", "HARDLY EVER", "YES, SOMETIMES", "YES, VERY OFTEN"] },
+            { id: "q5", text: "5. I have felt scared or panicky", options: ["YES, QUITE A LOT", "YES, SOMETIMES", "NO, NOT MUCH", "NO, NOT AT ALL"] },
+            { id: "q6", text: "6. I have felt overwhelmed", options: ["YES, MOST OF THE TIME I HAVEN'T BEEN ABLE TO COPE AT ALL", "YES, SOMETIMES I HAVEN'T BEEN COPING AS WELL AS USUAL", "NO, MOST OF THE TIME I HAVE COPED QUITE WELL", "NO, I HAVE BEEN COPING AS WELL AS EVER"] },
+            { id: "q7", text: "7. I have had difficulty sleeping even when I have the opportunity to sleep", options: ["YES, MOST OF THE TIME", "YES, QUITE OFTEN", "NOT VERY OFTEN", "NO, NOT AT ALL"] },
+            { id: "q8", text: "8. I have felt sad or miserable", options: ["YES, MOST OF THE TIME", "YES, QUITE OFTEN", "NOT VERY OFTEN", "NO, NOT AT ALL"] },
+            { id: "q9", text: "9. I have felt so unhappy that I have been crying", options: ["YES, MOST OF THE TIME", "YES, QUITE OFTEN", "ONLY OCCASIONALLY", "NO, NEVER"] },
+            { id: "q10", text: "10. The thought of harming myself has occurred to me", options: ["YES, QUITE OFTEN", "SOMETIMES", "HARDLY EVER", "NEVER"] }
+        ]
+    },
+    parent: {
+        title: "Parent Test: Your Child's Mental Health",
+        subtitle: "Pediatric Symptom Checklist\n\nThe questionnaire that follows can be used to see if your child is having emotional, attentional, or behavioral difficulties. For each item please mark how often your child:",
+        type: "Parent",
+        questions: [
+            { id: "q1", text: "Feels sad, unhappy", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q2", text: "Feels hopeless", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q3", text: "Is down on self", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q4", text: "Worries a lot", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q5", text: "Seems to be having less fun", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q6", text: "Fidgety, unable to sit still", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q7", text: "Daydreams too much", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q8", text: "Distracted easily", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q9", text: "Has trouble concentrating", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q10", text: "Acts as if driven by a motor", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q11", text: "Fights with other children", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q12", text: "Does not listen to rules", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q13", text: "Does not understand other people's feelings", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q14", text: "Teases others", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q15", text: "Blames others for his/her troubles", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q16", text: "Refuses to share", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q17", text: "Takes things that do not belong to him/her", options: ["NEVER", "SOMETIMES", "OFTEN"] }
+        ]
+    },
+    youth: {
+        title: "Youth Mental Health Test",
+        subtitle: "The questionnaire that follows can be used to see if you are having emotional, attentional, or behavioral difficulties. For each item please mark how often you:",
+        type: "Youth",
+        questions: [
+            { id: "q1", text: "Complain of aches or pains", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q2", text: "Spend more time alone", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q3", text: "Tire easily, little energy", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q4", text: "Fidgety, unable to sit still", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q5", text: "Have trouble with teacher", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q6", text: "Less interested in school", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q7", text: "Act as if driven by motor", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q8", text: "Daydream too much", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q9", text: "Distract easily", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q10", text: "Are afraid of new situations", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q11", text: "Feel sad, unhappy", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q12", text: "Are irritable, angry", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q13", text: "Feel hopeless", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q14", text: "Have trouble concentrating", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q15", text: "Less interested in friends", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q16", text: "Fight with other children", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q17", text: "Absent from school", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q18", text: "School grades dropping", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q19", text: "Down on yourself", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q20", text: "Visit doctor with doctor finding nothing wrong", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q21", text: "Have trouble sleeping", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q22", text: "Worry a lot", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q23", text: "Want to be with parent more than before", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q24", text: "Feel that you are bad", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q25", text: "Take unnecessary risks", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q26", text: "Get hurt frequently", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q27", text: "Seem to be having less fun", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q28", text: "Act younger than children your age", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q29", text: "Do not listen to rules", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q30", text: "Do not show feelings", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q31", text: "Do not understand other people's feelings", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q32", text: "Tease others", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q33", text: "Blame others for your troubles", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q34", text: "Take things that do not belong to you", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q35", text: "Refuse to share", options: ["NEVER", "SOMETIMES", "OFTEN"] },
+            { id: "q36", text: "Do you have any emotional or behavioral problems for which you need help?", options: ["NO", "YES"] }
+        ]
+    }
+}
