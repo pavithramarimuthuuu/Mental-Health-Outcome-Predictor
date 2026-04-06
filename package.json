@@ -8,7 +8,7 @@
     "dev:frontend": "vite",
     "dev:backend": "npm run dev --prefix backend",
     "build": "vite build",
-    "render-build": "npm install && npm run build && npm install --prefix backend",
+    "render-build": "npm install --include=dev && npm run build && npm install --prefix backend",
     "start": "node backend/server.js",
     "lint": "eslint .",
     "preview": "vite preview"
