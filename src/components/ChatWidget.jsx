@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Send } from 'lucide-react';
+import { apiRequest } from '../utils/api';
 
 export default function ChatWidget() {
     const initialMessage = { id: 1, text: "Hello! How can I help you today?", sender: 'ai' };
@@ -34,15 +35,11 @@ export default function ChatWidget() {
         setMessages(prev => [...prev, { id: typingId, text: "...", sender: 'ai', isTyping: true }]);
         
         try {
-            const response = await fetch('http://localhost:5000/api/chat', {
+            const response = await apiRequest('/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: newUserMsg.text, history: messages })
             });
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
 
             const data = await response.json();
             
